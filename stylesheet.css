@@ -38,7 +38,7 @@ body {
 }
 
 .profile {
-    background-image: url("./images/illustration-hero.svg");
+    background-image: url("images/illustration-hero.svg");
     border-radius: 18px 18px 0px 0px;
     width: 450px;
     height: 253px;
