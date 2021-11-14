@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&family=Red+Hat+Display:wght@500&display=swap');
+
+:root {
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-position: 0 -87px;
+    background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 450px;
+    height: 668px;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 18px;
+    margin-bottom: 10px;
+    box-shadow: 0px 24px 27px -24px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 24px 27px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 24px 27px -24px rgba(0,0,0,0.75);
+}
+
+.profile {
+    background-image: url("/images/illustration-hero.svg");
+    border-radius: 18px 18px 0px 0px;
+    width: 450px;
+    height: 253px;
+    background-repeat: no-repeat;
+}
+
+.content > h1 {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 17px;
+}
+
+.content > p {
+    line-height: 1.6;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    color: var(--Desaturated-blue);
+}
+
+.logos {
+    height: 81px;
+    width: 342px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+.logos > #imagelogo {
+    float: left;
+    padding: 16px;
+}
+
+.definition {
+    font-size: 13px;
+    float: left;
+    font-weight: normal;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-left: 5px;
+}
+
+.definition > h4 {
+    color: var(--Desaturated-blue);
+}
+
+.logos > h2 {
+    float: right;
+    font-size: 12px;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    padding: 30px 30px 30px 0px;
+}
+
+.button-payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 342px;
+    height: 59px;
+    border: none;
+    background-color: var(--Bright-blue);
+    color: white;
+    border-radius: 16px;
+    margin: auto;
+    -webkit-box-shadow: 0px 17px 38px -16px #000000; 
+    box-shadow: 0px 17px 38px -16px var(--Desaturated-blue);
+    margin-top: 28px;
+}
+
+.button-cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--Desaturated-blue);
+    font-weight: bold;
+    padding: 20px;
+    margin: 17px;
+}
+
+h2:hover, .button-payment:hover, .button-cancel:hover {
+    cursor: pointer;
+}
+
+.button-payment:hover, h2:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.button-cancel:hover {
+    color: black;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 375px) {
+    .container {
+        width: 330px;
+        height: 589px;
+    }
+
+    .profile {
+        background-size: 330px;
+        width: 330px;
+        height: 195px;
+    }
+
+    .content > p {
+        width: 270px;
+    }
+
+    .logos {
+        width: 285px;
+    }
+
+    .logos > h2 {
+        padding-right: 10px;
+    }
+
+    .button-payment {
+        width: 285px;
+    }
+}
